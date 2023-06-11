@@ -1,0 +1,82 @@
+﻿@model IEnumerable<EmployeeArrivalModels.EmployeeArrival>
+
+@{
+    ViewData["Title"] = "Employee arrival report";
+}
+
+<h2>Employee arrival report</h2>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: 
+            <input type="text" name="NameSearch" value="@ViewData["NameSearchPar"]" />
+            or by arrival date
+            <input type="date" name="ArrivalDateSearch" value="@ViewData["ArrivalDateSearchPar"]" />
+            <input type="submit" value="Search" class="btn btn-primary btn-sm" /> |
+            <a asp-action="Index">Clear search</a>
+        </p>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["EmployeeIdSortPar"]" asp-route-nameSearch="@ViewData["NameSearchPar"]" asp-route-arrivalDateSearch="@ViewData["ArrivalDateSearchPar"]">
+                    @Html.DisplayNameFor(model => model.EmployeeId)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortPar"]" asp-route-nameSearch="@ViewData["NameSearchPar"]" asp-route-arrivalDateSearch="@ViewData["ArrivalDateSearchPar"]">
+                    @Html.DisplayNameFor(model => model.Employee.Name)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["SurNameSortPar"]" asp-route-nameSearch="@ViewData["NameSearchPar"]" asp-route-arrivalDateSearch="@ViewData["ArrivalDateSearchPar"]">
+                    @Html.DisplayNameFor(model => model.Employee.SurName)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["EmailSortPar"]" asp-route-nameSearch="@ViewData["NameSearchPar"]" asp-route-arrivalDateSearch="@ViewData["ArrivalDateSearchPar"]">
+                    @Html.DisplayNameFor(model => model.Employee.Email)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["AgeSortPar"]" asp-route-nameSearch="@ViewData["NameSearchPar"]" asp-route-arrivalDateSearch="@ViewData["ArrivalDateSearchPar"]">
+                    @Html.DisplayNameFor(model => model.Employee.Age)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["ArrivalDateTimeSortPar"]" asp-route-nameSearch="@ViewData["NameSearchPar"]" asp-route-arrivalDateSearch="@ViewData["ArrivalDateSearchPar"]">
+                    @Html.DisplayNameFor(model => model.ArrivalDateTime)
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee.SurName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArrivalDateTime)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

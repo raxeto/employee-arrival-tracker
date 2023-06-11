@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Subscribe";
+}
+
+<h1 class="display-4">Subscribe</h1>
+
+
+<form asp-controller="Subscribe" asp-action="Post" method="post">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required />
+    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+</form>
