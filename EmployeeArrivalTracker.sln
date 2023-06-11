@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalTracker.WebSite", "EmployeeArrivalTracker.WebSite\EmployeeArrivalTracker.WebSite.csproj", "{95E8E482-EDBF-4692-A6B8-F290DADCAE46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscribeEmployeeArrivalService", "SubscribeEmployeeArrivalService\SubscribeEmployeeArrivalService.csproj", "{4EAC1BF7-2B64-45CB-8BEC-C17D31B4B5D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalData", "EmployeeArrivalData\EmployeeArrivalData.csproj", "{A25C60BC-8AAB-4EED-BE29-641724DB276D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalModels", "EmployeeArrivalModels\EmployeeArrivalModels.csproj", "{5D0E0584-D0E6-4BBD-B4C9-01A9BFB6EF80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalReadService", "EmployeeArrivalReadService\EmployeeArrivalReadService.csproj", "{4E34C3BF-498C-4341-A340-D8BCBBA6272A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalWriteService", "EmployeeArrivalWriteService\EmployeeArrivalWriteService.csproj", "{6960BA12-F72C-4D89-A0CA-CA483712C586}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{42F304F9-A88E-41A0-89F6-01631BBA5C26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalReadServiceTests", "EmployeeArrivalReadServiceTests\EmployeeArrivalReadServiceTests.csproj", "{EF59439B-65CC-4D02-B03F-06F61575728E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeArrivalTestDataSeeder", "EmployeeArrivalTestDataSeeder\EmployeeArrivalTestDataSeeder.csproj", "{C9CB13C5-44F8-4986-A3A0-9C9B58DF10C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeArrivalWriteServiceTests", "EmployeeArrivalWriteServiceTests\EmployeeArrivalWriteServiceTests.csproj", "{F406402E-8CA9-4282-A504-070919017E1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95E8E482-EDBF-4692-A6B8-F290DADCAE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E8E482-EDBF-4692-A6B8-F290DADCAE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E8E482-EDBF-4692-A6B8-F290DADCAE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E8E482-EDBF-4692-A6B8-F290DADCAE46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EAC1BF7-2B64-45CB-8BEC-C17D31B4B5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAC1BF7-2B64-45CB-8BEC-C17D31B4B5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAC1BF7-2B64-45CB-8BEC-C17D31B4B5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAC1BF7-2B64-45CB-8BEC-C17D31B4B5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25C60BC-8AAB-4EED-BE29-641724DB276D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25C60BC-8AAB-4EED-BE29-641724DB276D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25C60BC-8AAB-4EED-BE29-641724DB276D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25C60BC-8AAB-4EED-BE29-641724DB276D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0E0584-D0E6-4BBD-B4C9-01A9BFB6EF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0E0584-D0E6-4BBD-B4C9-01A9BFB6EF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0E0584-D0E6-4BBD-B4C9-01A9BFB6EF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0E0584-D0E6-4BBD-B4C9-01A9BFB6EF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E34C3BF-498C-4341-A340-D8BCBBA6272A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E34C3BF-498C-4341-A340-D8BCBBA6272A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E34C3BF-498C-4341-A340-D8BCBBA6272A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E34C3BF-498C-4341-A340-D8BCBBA6272A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6960BA12-F72C-4D89-A0CA-CA483712C586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6960BA12-F72C-4D89-A0CA-CA483712C586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6960BA12-F72C-4D89-A0CA-CA483712C586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6960BA12-F72C-4D89-A0CA-CA483712C586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF59439B-65CC-4D02-B03F-06F61575728E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF59439B-65CC-4D02-B03F-06F61575728E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF59439B-65CC-4D02-B03F-06F61575728E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF59439B-65CC-4D02-B03F-06F61575728E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9CB13C5-44F8-4986-A3A0-9C9B58DF10C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CB13C5-44F8-4986-A3A0-9C9B58DF10C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CB13C5-44F8-4986-A3A0-9C9B58DF10C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CB13C5-44F8-4986-A3A0-9C9B58DF10C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F406402E-8CA9-4282-A504-070919017E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F406402E-8CA9-4282-A504-070919017E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F406402E-8CA9-4282-A504-070919017E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F406402E-8CA9-4282-A504-070919017E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF59439B-65CC-4D02-B03F-06F61575728E} = {42F304F9-A88E-41A0-89F6-01631BBA5C26}
+		{C9CB13C5-44F8-4986-A3A0-9C9B58DF10C4} = {42F304F9-A88E-41A0-89F6-01631BBA5C26}
+		{F406402E-8CA9-4282-A504-070919017E1C} = {42F304F9-A88E-41A0-89F6-01631BBA5C26}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {054A01FD-B5B0-41B2-B4FF-AE8B51122CD9}
+	EndGlobalSection
+EndGlobal
